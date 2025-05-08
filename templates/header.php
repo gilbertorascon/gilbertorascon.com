@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
 		<script type="text/javascript" src="./assets/js/main.js" defer></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body>
 		<div id="container">

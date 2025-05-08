@@ -1,5 +1,6 @@
 <?php include "./templates/header.php"; ?>
 		<?php
+		
 			use PHPMailer\PHPMailer\PHPMailer;
 			use PHPMailer\PHPMailer\Exception;
 			
@@ -11,42 +12,54 @@
 
 			if(isset($_POST['submit'])) {
 
-				$name = $_POST['name'];
-				$email = $_POST['email'];
-				$subject = $_POST['subject'];
-				$message = $_POST['message'];
+				$recaptcha = $_POST['g-recaptcha-response'];
+				$secret_key = '';
+				$url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_key . '&response=' . $recaptcha;
 
-				$mail = new PHPMailer(true); // Passing `true` enables exceptions
+				$response = file_get_contents($url);
 
-				$mail->SMTPDebug = 0;
-				$mail->isSMTP();
+				$response = json_decode($response);
 
-				$mail->Host = '';
-				$mail->SMTPAuth = true;
-				$mail->Username = '';
-				$mail->Password = '';
-				$mail->SMTPSecure = 'tls';
-				$mail->Port = ;
-
-				$mail->setFrom('', 'Contact Form');
-				$mail->addAddress('', 'Mailer'); // Add a recipient
-				$mail->addReplyTo($_POST['email'], $_POST['name']); //
-				
-				$mail->isHTML(true);    
-				$mail->Subject = 'Portfolio Form Submission from ' .$_POST['name'];
-				$mail->Body = '<h2>Contact Form Submission</h2>
-					<p><strong>Name:</strong> '.$name.'</p>
-					<p><strong>Email:</strong> '.$email.'</p>
-					<p><strong>Subject:</strong> '.$subject.'</p>
-					<p><strong>Message</strong>: '.$message.'</p>
-				';
-
-				try {
-					$mail->send();
-					$msg = 'Your message was sent successfully!';
-				} catch (Exception $e) {
-					$msg = "Your message could not be sent! PHPMailer Error: {$mail->ErrorInfo}";
-				} 
+				if ($response->success == true) {		
+					try {
+						$name = $_POST['name'];
+						$email = $_POST['email'];
+						$subject = $_POST['subject'];
+						$message = $_POST['message'];
+		
+						$mail = new PHPMailer(true); // Passing `true` enables exceptions
+		
+						$mail->SMTPDebug = 0;
+						$mail->isSMTP();
+		
+						$mail->Host = '';
+						$mail->SMTPAuth = true;
+						$mail->Username = '';
+						$mail->Password = '';
+						$mail->SMTPSecure = 'tls';
+						$mail->Port = ;
+		
+						$mail->setFrom('', 'Contact Form');
+						$mail->addAddress('', 'Mailer'); // Add a recipient
+						$mail->addReplyTo($_POST['email'], $_POST['name']); //
+						
+						$mail->isHTML(true);    
+						$mail->Subject = 'Portfolio Form Submission from ' .$_POST['name'];
+						$mail->Body = '<h2>Contact Form Submission</h2>
+							<p><strong>Name:</strong> '.$name.'</p>
+							<p><strong>Email:</strong> '.$email.'</p>
+							<p><strong>Subject:</strong> '.$subject.'</p>
+							<p><strong>Message</strong>: '.$message.'</p>
+						';
+						
+						$mail->send();
+						$msg = 'Your message was sent successfully!';
+					} catch (Exception $e) {
+						$msg = "Your message could not be sent! PHPMailer Error: {$mail->ErrorInfo}";
+					} 
+				} else {
+					$msg = "Error in Google reCAPTACHA";
+				}
 			} else {
 				$msg = "There is a problem with the contact form!";
 			}
