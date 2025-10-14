@@ -13,9 +13,6 @@
                                     <a href="https://www.linkedin.com/in/gilberto-rascón/" target="_blank">
                                         <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
                                     </a>
-                                    <a href="https://github.com/gilbertorascon" target="_blank">
-                                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>

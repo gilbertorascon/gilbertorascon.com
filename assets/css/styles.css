@@ -647,7 +647,8 @@ main {
   color: #434343;
   font-weight: 700;
 }
-#contact_form form .form_field input, #contact_form form .form_field textarea {
+#contact_form form .form_field input,
+#contact_form form .form_field textarea {
   padding: 1rem 0.5rem;
   background: #f2f2f2;
   color: #434343;
@@ -748,7 +749,8 @@ main {
   #contact_form form .form_field label {
     font-size: 14px;
   }
-  #contact_form form .form_field input, #contact_form form .form_field textarea {
+  #contact_form form .form_field input,
+  #contact_form form .form_field textarea {
     font-size: 14px;
   }
   #contact_form form .btn {

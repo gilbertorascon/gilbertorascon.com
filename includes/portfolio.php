@@ -4,28 +4,28 @@
 			'image' => 'anacapastorage.com.png',
 			'title' => 'Anacapa Storage',
 			'description' => 'A full website built with the CodeIgniter framework for a single facility self-storage company. This project was done individually and features a rates page that integrated Automatit\'s reservation system and the Client\'s property software management, allowing users to view and reserve units. The website also featured a contact form and Automatit\'s Space Estimator and Size Guide tools.',
-			'tools' => 'HTML|PHP|CSS/SCSS|JavaScript|MySQL',
+			'tools' => 'HTML|PHP|CSS/SCSS|JavaScript|Node.js|MySQL',
 			'link'=> 'https://web.archive.org/web/20231228121702/https://anacapastorage.com/',
 		],
 		[
 			'image' => 'ulok.com.png',
 			'title' => 'Downtown U-Lok Storage',
 			'description' => 'A full website built with the CodeIgniter framework for a single facility self-storage company. This project was done in collaboration with other developers. I worked on the homepage, internal pages, and the contact page. This website also features a rates page that integrated Automatit\'s reservation system and the Client\'s property software management, allowing users to view and reserve units. The website also featured a contact form and Automatit\'s Space Estimator and Size Guide tools.',
-			'tools' => 'HTML|PHP|CSS/SCSS|JavaScript|MySQL',
+			'tools' => 'HTML|PHP|CSS/SCSS|JavaScript|Node.js|MySQL',
 			'link'=> 'https://web.archive.org/web/20240619015358/https://ulok.com/',
 		],
 		[
 			'image' => 'eagleeyestorage.com.png',
 			'title' => 'Eagle Eye Secure Storage',
 			'description' => 'A full website built with the CodeIgniter framework for a self-storage company with 3 locations. This project was done in collaboration with other developers. I worked on sections of the homepage, rates pages, and internal pages. This website also features a rates page that integrated Automatit\'s reservation system and the Client\'s property software management, allowing users to view and reserve units. The website also featured a contact form and Automatit\'s Space Estimator and Size Guide tools.',
-			'tools' => 'HTML|PHP|CSS/SCSS|JavaScript|MySQL',
+			'tools' => 'HTML|PHP|CSS/SCSS|JavaScript|Node.js|MySQL',
 			'link'=> 'https://web.archive.org/web/20240613031418/https://eagleeyestorage.com/',
 		],
 		[
 			'image' => 'beechgrove.us.png',
 			'title' => 'Beechgrove Self Storage',
 			'description' => 'A full website built with the CodeIgniter framework for a single facility self-storage company. This project was done individually and features a rates page that integrated Automatit\'s reservation system and the Client\'s property software management, allowing users to view and reserve units. The website also featured a contact form and Automatit\'s Space Estimator and Size Guide tools.',
-			'tools' => 'HTML|PHP|CSS/SCSS|JavaScript|MySQL',
+			'tools' => 'HTML|PHP|CSS/SCSS|JavaScript|Node.js|MySQL',
 			'link'=> 'https://web.archive.org/web/20240224181237/https://www.beechgrove.us/',
 		]
 	]

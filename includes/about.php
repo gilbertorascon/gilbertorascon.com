@@ -13,7 +13,7 @@
 			<div class="column">
 				<h4>My Skills</h4>
 				<?php
-					$skills = array('HTML', 'CSS', 'SCSS', 'PHP', 'JavaScript', 'MySQL', 'CodeIgniter', 'Responsive Design', 'Web Accessibility', 'GIT', 'FTP', 'DNS', 'Troubleshooting', 'Customer Support');
+					$skills = array('HTML', 'CSS', 'SCSS', 'PHP', 'JavaScript', 'Node.js', 'MySQL', 'CodeIgniter', 'Responsive Design', 'Web Accessibility', 'GIT', 'GitHub', 'FTP', 'DNS', 'Troubleshooting', 'Customer Support');
 				?>
 				<div class="skills_wrapper">
 					<?php
