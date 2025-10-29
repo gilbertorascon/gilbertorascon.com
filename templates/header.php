@@ -19,7 +19,6 @@
 					<div id="header_wrapper" class="max_width">
 						<div id="site_logo">
 							<a href="/#" data-header-link="home" class="header_link">
-								<img src="./assets/images/profile_img_small.jpg" alt="" class="header_img">
 								<span>GILBERTO RASCÓN</span>
 							</a>
 						</div>

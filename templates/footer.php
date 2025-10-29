@@ -5,7 +5,8 @@
                         <div class="footer_top">
                             <div class="footer_about">
                                 <h2>GILBERTO RASCÓN</h2>
-                                <p>Front-End Developer | Website Support Technician</p>
+                                <p>Junior Web Developer | Front-End Developer</p>
+                                <p>Website Support Technician</p>
                             </div>
                             <div class="footer_social">
                                 <h2>SOCIAL</h2>
